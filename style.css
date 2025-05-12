@@ -1,67 +1,92 @@
 body {
-    font-family: sans-serif;
-    background: #161222;
-    padding: 20px;
-    margin: 0;
+  font-family: sans-serif;
+  background: #161222;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #68b7b5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formulario input {
+  flex: 1 1 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 0;
+}
+
+.formulario button {
+  flex: 1 1 100%;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#lista-anotacoes li {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  list-style: none;
+}
+
+#rodape {
+  text-align: center;
+  padding: 20px;
+  background-color: #28203d;
+  color: white;
+  font-size: 14px;
+}
+
+#rodape img {
+  margin: 0 5px;
+  max-width: 20px;
+  vertical-align: middle;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .formulario input,
+  .formulario button {
+    flex: 1 1 100%;
+    font-size: 1rem;
   }
-  
-  .container {
-    max-width: 600px;
-    margin: auto;
-    background: #68b7b5;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .formulario {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .formulario input {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  
+
   #lista-anotacoes li {
-    background: #eee;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    list-style: none;
+    font-size: 0.95rem;
   }
+
   #rodape {
-    text-align: center;
-    padding: 20px;
-    background-color: #28203d;
-    color: white;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 15px;
   }
-  
-  #rodape img {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  
+}
