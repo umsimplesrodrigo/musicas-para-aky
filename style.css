@@ -1,11 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   background: #161222;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
 }
 
 .container {
+  width: 100%;
   max-width: 600px;
   margin: auto;
   background: #68b7b5;
@@ -16,17 +20,20 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #161222;
 }
 
 .formulario {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }
 
+/* Campos e botão no desktop */
 .formulario input {
-  flex: 1 1 100%;
+  flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -34,29 +41,35 @@ h1 {
 }
 
 .formulario button {
-  flex: 1 1 100%;
-  padding: 10px;
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
 button {
-  padding: 8px 12px;
   border: none;
   background: #007bff;
   color: white;
-  border-radius: 6px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
   background: #0056b3;
 }
 
+#lista-anotacoes {
+  padding: 0;
+  margin: 0;
+}
+
 #lista-anotacoes li {
   background: #eee;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 10px;
   border-radius: 6px;
   list-style: none;
+  word-break: break-word;
 }
 
 #rodape {
@@ -73,18 +86,22 @@ button:hover {
   vertical-align: middle;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade para telas até 600px */
 @media (max-width: 600px) {
+  .formulario {
+    flex-direction: column;
+  }
   .formulario input,
   .formulario button {
-    flex: 1 1 100%;
+    width: 100%;
     font-size: 1rem;
   }
-
+  h1 {
+    font-size: 1.3rem;
+  }
   #lista-anotacoes li {
     font-size: 0.95rem;
   }
-
   #rodape {
     font-size: 12px;
     padding: 15px;
