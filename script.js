@@ -86,7 +86,7 @@ function renderizar() {
             const dados = item.val();
             const id = item.key;
 
-            if (Date.now() - dados.timestamp <= 5 * 60 * 1000) {
+            if (Date.now() - dados.timestamp <= 60 * 60 * 1000) {
                 anotacoes.push({ id, ...dados });
             } else {
                 db.child(id).remove();
