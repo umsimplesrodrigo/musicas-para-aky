@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aky Song</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Músicas para a Aky❤️</h1>
+    <div class="formulario">
+      <input type="text" id="nickname" placeholder="Seu nick">
+      <input type="text" id="mensagem" placeholder="Sua música (máx 150 caracteres)" maxlength="150">
+      <button onclick="enviarAnotacao()">Enviar</button>
+    </div>
+    <ul id="lista-anotacoes"></ul>
+  </div>
+  <footer id="rodape">
+    <p>Desenvolvido por umsimplesrodrigo<img src="midia/macaco-cirugiao-umsimples.png" alt="macaco-cirugiao" style="width: 30px; vertical-align: middle;"></p>
+  </footer>
+</body>
+</html>
