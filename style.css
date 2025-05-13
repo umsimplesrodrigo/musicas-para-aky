@@ -107,3 +107,20 @@ button:hover {
     padding: 15px;
   }
 }
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape-msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.hora {
+  font-size: 0.85em;
+  color: #555;
+}
