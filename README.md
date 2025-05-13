@@ -9,8 +9,8 @@ Para resolver isso, criei este site simples e rápido que organiza os pedidos de
 - As músicas com mais votos vão naturalmente subindo para o topo da lista.
 
 🔗 Links úteis
-[🎧 Canal da Aky no YouTube](https://www.youtube.com/@AsmrdaAky)
-[🌐 Acesse o site aqui](https://umsimplesrodrigo.github.io/musicas-para-aky/)
+- [🎧 Canal da Aky no YouTube](https://www.youtube.com/@AsmrdaAky)
+- [🌐 Acesse o site aqui](https://umsimplesrodrigo.github.io/musicas-para-aky/)
 
 ## Um recado
 Esse projeto é feito com carinho e nas horas vagas. Por favor, não tente bagunçar o site ou atacar o banco de dados. Aos poucos, vou corrigindo bugs e melhorando as funcionalidades.
